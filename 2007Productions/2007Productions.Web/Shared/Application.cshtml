@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+
+<html>
+    @{ this.Asset("site-css"); }
+    @{ this.Asset("site-js"); }
+    <head>
+        <title>2007 Productions</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            @RenderBody()    
+        </div>
+        @this.WriteCssTags()
+        @this.WriteScriptTags()
+    </body>
+</html>
